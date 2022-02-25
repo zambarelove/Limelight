@@ -1,0 +1,1014 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .5s all;
+    color: var(--black);
+}
+a:hover{
+    color: var(--black);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url('./assets/fonts/Poppins-Bold.ttf');
+}
+:root{
+    --primary-color: #33f033;
+    --black: #2a2b2a;
+    --section-bg: #eae7e7;
+    --white: #fff;
+}
+
+/* =================================================== */
+
+/* header css start here */
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: var(--white);
+        overflow: hidden;
+    }
+    #nav-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav-link li{
+        margin-top: 5px;
+    }
+    #nav-link a{
+        font-size: 17px;
+        line-height: 17px;
+        color: #333333;
+        font-weight: 400;
+        text-decoration: none;
+        font-family: poppins-regular;
+
+    }
+    #nav-link a:hover{
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+        letter-spacing: 1.5px;
+    }
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    }
+    #nav-link li{
+        margin: 10px 20px 0 20px;
+    }
+    .overlay a {
+    padding: 2px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    }
+    .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    }
+    .overlay .closebtn{
+    position: absolute;
+    top: -10px;
+    right: -100px;
+    font-size: 60px;
+    width: 100%;
+    color: var(--primary-color);
+    }
+    .open-tab{
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }      
+/* header css end here */
+
+/* all slider controls css start here */
+    /* ===== 1 hero slider css start here  ===== */
+    
+    .responsive-1 .slick-prev,.responsive-1 .slick-next{
+        z-index: 2;
+    }
+    .responsive-1 .slick-prev{
+        left: 47%;
+        top: 99.5%;
+        width: 32px;
+        height: 32px;
+    }
+    .responsive-1 .slick-next{
+        left: 50%;
+        top: 97%;
+        width: 32px;
+        height: 32px;   
+    }
+    .responsive-1 .slick-prev::before{
+        content: url('./assets/images/slider-arrows/hero-slider-arrow/limelight\ \ Design-1.png') !important;
+        width: 32px !important;
+        height: 32px !important;
+    }
+    .responsive-1 .slick-next::before{
+        content: url('./assets/images/slider-arrows/hero-slider-arrow/limelight\ \ Design-2.png') !important;
+        width: 32px !important;
+        height: 32px !important;
+        z-index: 2;
+    }
+    /* ===== 1 hero slider css end here  ===== */
+
+    /* ===== slider 2 design ideas start here ===== */
+    .responsive-2 .slick-prev, .responsive-2 .slick-next{
+        z-index: 2;
+    }
+    .responsive-2 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 90%;
+        left: 5%;
+    }
+    .responsive-2 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 90%;
+        left: 10%;
+    }
+    .responsive-2 .slick-prev::before{
+        content: url('./assets/images/slider-arrows/secound-slider/secound-slider-arrow.png');
+        width: 32px;
+        height: 32px;
+    }
+    .responsive-2 .slick-next::before{
+        content: url('./assets/images/slider-arrows/secound-slider/slide-right.png');
+        width: 32px;
+        height: 32px;
+    }   
+    /* ===== slider 2 design ideas ===== */
+
+
+    /* ===== slider 3 testimonial start ===== */
+    .responsive-3 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 90%;
+        left: 105%;
+    }
+    .responsive-3 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 90%;
+        left: 111%;
+    }
+    .responsive-3 .slick-prev::before{
+        content: url('./assets/images/slider-arrows/secound-slider/secound-slider-arrow.png');
+        width: 32px;
+        height: 32px;
+    }
+    .responsive-3 .slick-next::before{
+        content: url('./assets/images/slider-arrows/secound-slider/slide-right.png');
+        width: 57px;
+        height: 57px;
+    }   
+    /* ===== slider 3 testimonial end ===== */
+
+/* all slider controls css end here */
+
+/* 2 slider container start here */
+    .section{
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }   
+    #slider{
+        width: 100%;
+        min-height: 650px;
+    }
+    #slider #furniture,#industry{
+        background-image: url('./assets/images/limelight\ \ Design\ \(2\).png');
+        width: 100%;
+        height: 550px;
+        background-size: cover;
+        background-position:center;
+        background-blend-mode: multiply;
+        background-color: #03f803;
+        position: relative;
+    }
+    #slider #furniture #info, #industry #info{
+        position: absolute;
+        top: 25%;
+        right: 15%;
+    } 
+    #info h2{
+        font-size: 42px;
+        line-height: 51px;
+        color: #0d0c0c;
+        font-weight: 700;
+        font-family: poppins-bold;
+    }
+    #info p{
+        font-size: 17px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: poppins-bold;
+    }
+    .slider-read-more{
+        padding: 10px 20px;
+        border-radius: 33px;
+        background-color: #ffffff;
+        color: #000;
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+    .slider-read-more:hover{
+        color: #03f803;
+    }
+    
+/* 2 slider container end here */
+
+/* 3 about container css start here  */
+    #about{
+        width: 100%;
+        /* height: 600px; */
+    }
+    .section-h2{
+        color: var(--black);
+        font-family: poppins-bold;
+    }
+    .section-h2 span{
+        color: var(--primary-color);
+    }
+    #about-img {
+        /* width: 200px; */
+        z-index: 2;
+        position: relative;
+    }
+    #about-img #overlay{
+        width: 355px;
+        height: 485px;
+        background-color: #F4F4F4;
+        position: absolute;
+        top: -5%;
+        right: -5%;
+        display: block;
+        z-index: -1;
+    } 
+    .read-more{
+        width: 210px;
+        height: 55px;
+        color: var(--white);
+        background-color: #252525;
+        text-decoration: none;
+        padding: 7px 15px;
+    }
+    .read-more:hover{
+        /* color: var(--primary-color); */
+        background-color: var(--primary-color);
+    }
+/* 3 about container css end here  */
+
+/* 4 services container start here */
+    #services{
+        width: 100%;
+        height: 750px;
+    }
+    #services .read-more{
+        margin-top: 40px;
+        display: inline-block;
+        width: 110px;
+        height: 40px;
+    }
+/* 4 services container end here */
+
+/* 5 our gallery container css start here */
+    #gallery{
+        width: 100%;
+        max-height: 50%;
+        background-color: #EAE7E7;
+    }
+    #gallery .gallery-info-card{
+        background-color: var(--black);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #gallery .gallery-info-card h3, .gallery-info-card p{
+        color: white;
+    }
+/* 5 our gallery container css end here */
+
+/* 6 ideas design container css start here */
+    #ideas-design{
+        width: 100%;
+        height: 100%;
+    }
+/* 6 ideas design container css end here */
+
+/* 7 blog container css start here */
+    #blog{
+        width: 100%;
+        min-height: 700px;
+    }
+    .blog-card{
+        position: relative;
+    }
+    .blog-before{
+        width: 320px;
+        height: 500px;
+        background-color: #2a2b2a;
+        position: absolute;
+        top: 0;
+        right: -20px;
+        z-index: -1;
+        filter: drop-shadow(0px 1px 125px rgba(4,1,1,0.16));
+        text-align: left;
+    }
+    .blog-before-2 {
+        width: 320px;
+        height: 500px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -20px;
+        z-index: -1;
+        filter: drop-shadow(0px 1px 125px rgba(4,1,1,0.16));
+        text-align: left;
+    }
+    .card-1{
+        background-color: #2a2b2a;
+    }
+    .card-1 h5, .card-1 p, .card-1 span, .card-1 div, .card-1 div i{
+        color: #ffffff;
+    }
+    .card-1,.card-2{
+        text-align: left;
+    }
+    #blog-card-wrapper {
+        position: relative;
+    }
+    #blog-card-wrapper #blog-card-inner{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    #blog .read-more{
+        width: 110px;
+        height: 40px;
+        display: inline-block;
+        margin-top: 30px;
+
+    }
+/* 7 blog container css end here */
+
+/* 8 testimonial container css start here */
+    #testimonial{
+        width: 100%;
+        height: 590px;
+    }
+    .testimonial-slide-container{
+        width: 986px;
+        height: 497px;
+        background-color: #343434;
+    }
+    .testimonial-card{
+        padding: 35px;
+        border: 1px solid var(--primary-color);
+        margin: 100px 10px 0 50px;
+        position: relative;
+    }
+    .testimonial-card img{
+        position: absolute;
+        width: 75px;
+        top: -30px;
+        left: 20px;
+    }
+    .testimonial-card h4, .testimonial-card p{
+        color: var(--white);
+    }
+    .testimonial-card p{
+        text-align: center;
+    }
+    #testimonial .fa-chevron-left:before {
+        content: "\f053";
+        font-size: 20px;
+        color: white;
+        background-color: #252525;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0px;
+        right: -100px;
+    }
+    #testimonial .fa-chevron-right:before {
+        content: "\f054";
+        font-size: 20px;
+        color: black;
+        background-color: #33f033;
+        font-weight: 600;
+        padding: 10px;
+        cursor: pointer;text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0px;
+        right: -150px;
+    }
+/* 8 testimonial container css end here */
+
+/* 9 contact container css start here */
+    #contact{
+        width: 100%;
+        min-height: 650px;
+        background-image: url('./assets/images/contact.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-color: #33f033;
+        position: relative;
+    }
+    #contact #contact-wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #contact .contact-form input{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 5px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    #contact .contact-form textarea{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 5px;
+    }
+    #contact .contact-form textarea::placeholder{
+        border: none;
+        outline: none;
+        padding: 5px;
+    }
+    #contact .contact-form input:focus, #contact .contact-form textarea:focus{
+        outline: none;
+        border: none;
+    } 
+    #contact .contact-form button{
+        background-color: transparent;
+        padding: 7px 20px;
+        border: 1px solid var(--white);
+        font-family: poppins-bold;
+        color: var(--white);
+    }
+    #contact #map{
+        width: 100%;
+        height: 100%;
+    }
+    #contact #contact-wrapper #submit{
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        bottom: -50px;
+        left: 315px;
+        background-color: transparent;
+        padding: 7px 20px;
+        border: 1px solid var(--white);
+        font-family: poppins-bold;
+        color: var(--white);
+    }
+/* 9 contact container css end here */
+
+/* 10 footer container css start here */
+    #footer{
+        background-color: var(--black);
+    }
+    #footer .social-link-wrapper a, #footer .social-link-wrapper p{
+        color: var(--white);
+        text-decoration: none;
+    }
+    #footer .help-wrapper h5, #footer .help-wrapper p{
+        color: var(--white);
+    }
+    #footer .information-wrapper h5, .information-wrapper a{
+        color: var(--white);
+        text-decoration: none;
+    }
+    .information-wrapper a:hover{
+        color: var(--primary-color);
+    }
+    #footer .design-wrapper h5, .design-wrapper p{
+        color: var(--white);
+    }
+/* 10 footer container css end here */
+
+
+
+
+@media screen and (max-width: 1326px) {
+    /* 2 slider container css start here */
+        #slider{
+            width: 100%;
+            min-height: 88vh;
+        }
+    /* 2 slider container css end here */
+
+    /* 3 about container css start here */
+        #about{
+            width: 100%;
+            min-height: 70vh;
+        }
+        #about-img #overlay{
+            width: 355px;
+            height: 415px;
+            background-color: #F4F4F4;
+            position: absolute;
+            top: -6%;
+            right: -5%;
+            display: block;
+            z-index: -1;
+        }
+    /* 3 about container css end here */
+
+    /* 4 services container css start here */
+        #services{
+            width: 100%;
+            height: 700px;
+        }
+    /* 4 services contaier css end here */
+}
+@media screen and (max-width: 1280px) {
+    /* about container css start here  */
+        #about-img #overlay{
+        width: 355px;
+        height: 415px;
+        background-color: #F4F4F4;
+        position: absolute;
+        top: -6%;
+        right: -5%;
+        display: block;
+        z-index: -1;
+        }
+    /* about container css end here  */
+
+    /* 8 testimonial container media qurie start here */
+        .testimonial-slide-container{
+            width: 850px;
+        }
+    /* 8 testimonial container media qurie end  */
+
+    /* 9 contact container media qurie start here */
+    #contact #contact-wrapper #submit{
+        left: 295px;
+    }
+    /* 9 contact container media qurie end here */
+}
+@media screen and (max-width: 1024px) {
+    /* 3 about container css start here  */
+        #about-img #overlay{
+        width: 355px;
+        height: 415px;
+        background-color: #F4F4F4;
+        position: absolute;
+        top: -6%;
+        right: -1%;
+        display: block;
+        z-index: -1;
+        }
+    /* 3 about container css end here  */
+
+    .responsive-2 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 90%;
+        left: 5%;
+    }
+    .responsive-2 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 90%;
+        left: 12%;
+    }
+
+    /* 8 testimonial container media qurie start here */
+    #testimonial{
+        width: 100%;
+        height: 590px;
+    }
+    .testimonial-slide-container{
+        width: 100%;
+        order: 2;
+    }
+    .heading{
+        order: 1;
+        margin: 0 auto 15px;
+    }
+    .testimonial-card{
+        margin: 50px 10px 0px 80px;
+    }
+    .responsive-3 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 115%;
+        left: 45%;
+    }
+    .responsive-3 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 115%;
+        left: 52%;
+    }
+    /* 8 testimonial container media qurie end  */
+
+    /* 9 contact container media qurie start here */
+     #contact #contact-wrapper #submit{
+        left: 170px;
+    }
+    /* 9 contact container media qurie end here */
+}
+@media screen and (max-width: 992px) {
+    /* hero slider nav-btn media quries start here */
+    .responsive-1 .slick-prev{
+        top: 99.5%;
+        left: 45%;
+    }
+    .responsive-1 .slick-next{
+        top: 97%;   
+        left: 50%;
+    }
+    /* hero slider media quries end here */
+
+    /* 2 about container media qurie start here  */
+        #about-img #overlay{
+        width: 250px;
+        height: 305px;
+        background-color: #F4F4F4;
+        position: absolute;
+        top: -6%;
+        right: -5%;
+        display: block;
+        z-index: -1;
+        }
+    /* 2 about container media qurie end here  */
+    
+    /* 8 testimonial container media qurie start here */
+    #testimonial{
+        width: 100%;
+        height: 590px;
+    }
+    .testimonial-slide-container{
+        width: 100%;
+        order: 2;
+    }
+    .responsive-3 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 110%;
+        left: 44%;
+    }
+    .responsive-3 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 110%;
+        left: 51%;
+    }
+    /* 8 testimonial container media qurie start here */
+
+    /* 9 contact container media qurie start here */
+    #contact #contact-wrapper #submit{
+        left: 155px;
+    }
+    /* 9 contact container media qurie end here */
+}
+@media screen and (max-width: 768px) {
+    /* 1 header css start here  */
+        header{
+            height: 65px;
+        }
+        .overlay .closebtn{
+            position: absolute;
+            top: -20px;
+            right: 0px;
+            font-size: 60px;
+            width: 10%;
+            color: var(--primary-color);
+            overflow: hidden;
+        }
+        .open-tab{
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+        .responsive-1 .slick-prev{
+            top: 99.5%;
+            left: 45%;
+        }
+        .responsive-1 .slick-next{
+            top: 97%;   
+            left: 52%;
+        }
+    /* 1 header css end here */
+
+    /* 2 about container media qurie start here  */
+        #about{
+            width: 100%;
+            height: 600px;
+        }
+        #about-img #overlay{
+            display: none;
+        }
+    /* about container media qurie end here  */
+    
+    .section{
+        padding: 70px 10px 0px;
+    }
+
+    /* 3 about container media qurie start here */
+    #about{
+        width: 100%;
+        height: 450px;
+    }
+    /* 3 about container media qurie start here */
+    
+    /* 6 ideas design container media qurie start here */
+
+    .responsive-2 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 88%;
+        left: 45%;
+    }
+    .responsive-2 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 88%;
+        left: 55%;
+    }
+    /* 6 ideas design container media qurie end here */
+
+    /* 8 testimonial container media qurie start here */
+    #testimonial{
+        width: 100%;
+        height: 690px;
+    }
+    .testimonial-card{
+        margin: 65px 10px 0 10px;
+    }
+    .responsive-3 .slick-prev{
+        top: 108%;
+        left: 42%;
+    }
+    .responsive-3 .slick-next{
+        top: 108%;
+        left: 51%;
+    }
+    /* 8 testimonial container media qurie end here */
+
+    /* 9 contact container media qurie start here */
+    
+    #contact #contact-wrapper #submit{
+        left: 50px;
+    }
+    /* 9 contact container media qurie end here */
+}
+@media screen and (max-width: 576px) {
+    /* header css media qurie here  */
+    header{
+        height: 60px;
+    }
+    #slider #furniture #info{
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    } 
+    #info h2{
+        font-size: 42px;
+        line-height: 51px;
+        color: #0d0c0c;
+        font-weight: 700;
+        font-family: poppins-bold;
+    }
+    #info p{
+        font-size: 17px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: poppins-bold;
+    }
+    .overlay .closebtn{
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        font-size: 60px;
+        width: 20%;
+        color: var(--primary-color);
+    }
+
+    .responsive-1 .slick-prev{
+        top: 99.5%;
+        left: 40%;
+    }
+    .responsive-1 .slick-next{
+        top: 97%;   
+        left: 47%;
+    }
+    /* header css end here  */
+
+    .section{
+        padding-top: 40px;
+        padding-bottom: 0px;
+    } 
+
+    /* 3 about container css start here  */
+        #about-img #overlay{
+            display: none;
+        }
+    /* 3 about container css end here  */
+
+    /* 6 ideas design container media qurie start here */
+    .responsive-2 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 88%;
+        left: 35%;
+    }
+    .responsive-2 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 88%;
+        left: 50%;
+    }
+    /* 6 ideas design container media qurie end here */
+
+    /* 7 blog container media qurie start */
+        .card-1, .card-2{
+            margin: 20px 0;
+        }
+    /* 7 blog container media qurie start */
+
+    /* 8 testimonial container media qurie start here */
+    #testimonial{
+        width: 100%;
+        height: 500px;
+    }
+    .testimonial-card{
+        padding: 15px;
+        margin: 100px 5px 0 5px;
+    }
+    .responsive-3 .slick-prev{
+        top: 115%;
+        left: 35%;
+    }
+    .responsive-3 .slick-next{
+        top: 115%;
+        left: 50%;
+    }
+    /* 8 testimonial container media qurie end here */
+
+    /* 9 contact container media qurie start here */
+    #map{
+            margin-top: 60px;
+    }
+     #contact #contact-wrapper #submit{
+        top: 260px;
+        left: 15px;
+    }
+    /* 9 contact container media qurie end here */
+}
+@media screen and (max-width: 420px) {
+/* 1 header css start here  */
+    header{
+        height: 65px;
+    }
+    .overlay .closebtn{
+        position: absolute;
+        top: -20px;
+        right: 15px;
+        font-size: 60px;
+        width: 15%;
+        color: var(--primary-color);
+        overflow: hidden;
+    }
+    .open-tab{
+            position: absolute;
+            top: 15px;
+            right: 20px;
+    }
+
+    .responsive-1 .slick-prev{
+        top: 99.5%;
+        left: 35%;
+    }
+    .responsive-1 .slick-next{
+        top: 97%;   
+        left: 50%;
+    }
+/* 1 header css end here */
+
+
+/* 3 about container css start here  */
+    #about-img #overlay{
+        display: none;
+    }
+/* 3 about container css end here  */  
+
+/* 4 service container media qurie start here */
+    #services {
+        margin-top: 130px;
+        height: unset;
+        padding-bottom: 20px;
+    }
+    #services .read-more{
+        margin-top: 15px;
+    }
+    .responsive-2 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 90%;
+        left: 30%;
+    }
+    .responsive-2 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 90%;
+        left: 50%;
+    }
+/* 4 services container media qurie end here */
+
+/* 7 blog container media qurie start here */
+    .card-1, .card-2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+/* 7 blog container media qurie end here */
+
+/* 8 testimonial slider container css start here */
+    #testimonial{
+        width: 100%;
+        height: 510px;
+    }
+    .testimonial-card{
+        padding: 5px;
+        margin: 100px 5px 0 5px;
+    }
+    .responsive-3 .slick-prev{
+        width: 32px;
+        height: 32px;
+        top: 110%;
+        left: 32%;
+    }
+    .responsive-3 .slick-next{
+        width: 32px;
+        height: 32px;
+        top: 110%;
+        left: 52%;
+    }
+/* 8 testimonial slider container css start here */
+
+/* 9 contact container css start here */
+    #contact #map{
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+    }
+    .copywrite p{
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+}
+/* 9 contact container css end here */
+    .section-h2 {
+        font-size: 38px;
+    }
+#footer .help-wrapper p, .design-wrapper p, #footer .social-link-wrapper a, #footer .social-link-wrapper p{
+    font-size: 14px;
+}
